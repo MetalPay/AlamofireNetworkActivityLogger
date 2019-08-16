@@ -118,8 +118,8 @@ public class NetworkActivityLogger {
             return
         }
         
-        startDates[task] = Date()
-        
+        startDates = [task: Date()]
+
         switch level {
         case .debug:
             logDivider()
